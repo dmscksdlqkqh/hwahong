@@ -6,11 +6,11 @@ def last_meal():
     URL = "https://open.neis.go.kr/portal/data/sheet/searchSheetData.do?page=1"
 
     HEADER = {
-        "User-Agent": "python requests | https://github.com/skchqhdpdy/seongpo-highschool-meal/blob/main/last_meal_info.py",
+        "User-Agent": "python requests | https://github.com/dmscksdlqkqh/hwahong/blob/main/last_meal_info.py",
         "Content-Type": "application/x-www-form-urlencoded",
     }
 
-    BODY = "rows=1&infId=OPEN17320190722180924242823&infSeq=1&ATPT_OFCDC_SC_CODE=J10&SCHUL_NM=%EC%84%B1%ED%8F%AC&MMEAL_SC_NM=&MLSV_YMD=&MLSV_YMD="
+    BODY = "rows=1&infId=OPEN17320190722180924242823&infSeq=1&ATPT_OFCDC_SC_CODE=J10&SCHUL_NM=%EC%84%B1%ED%8F%AC&MMEAL_SC_NM=&MLSV_YMD=&MLSV_YMD=7530479"
 
     r = requests.post(url=URL, headers=HEADER, data=BODY)
     r = r.json()
